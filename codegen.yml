@@ -1,0 +1,9 @@
+schema: schema.graphql
+generates:
+  ./src/resolvers.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers
+    # config:
+    #   resolverTypeWrapperSignature: Promise<T> | T | (() => T) | (() => Promise<T>)
+
